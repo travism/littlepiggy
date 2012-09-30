@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Little Piggy - Pigskin Pickem'</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Travis McHattie <travis.mchattie@thinksolid.com>">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        img.matchup {
+            height:30px;
+            width:30px;
+            padding:5px;
+            vertical-align:middle
+        }
+
+        img.matchup-fullsize {
+            height:60px;
+            width:60px;
+            padding:5px;
+            vertical-align:middle
+        }
+
+        img.falcons {
+            content:url(http://content.sportslogos.net/logos/7/173/full/299.gif);
+        }
+
+        img.cardinals {
+            content:url(http://content.sportslogos.net/logos/7/177/full/kwth8f1cfa2sch5xhjjfaof90.gif);
+        }
+
+        img.profile {
+            content:url(https://secure.gravatar.com/avatar/73a2ffba9e3be3c846684c3285e1a967?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png);
+            height:30px;
+            width:30px;
+            padding:5px;
+            vertical-align:middle
+        }
+
+        .table-striped tbody tr:nth-child(odd) td {
+            background-color: #f9f9f9;
+        }
+
+        .table-bordered th,
+        .table-striped tbody tr:nth-child(odd) th{
+            background-color: #333333;
+            color: #ffffff;
+        }
+        .table-bordered td {
+            background-color: #ffffff;
+        }
+
+        .table-bordered.matchups td.aligncenter {
+            text-align: center;
+        }
+
+        table.standings td,
+        table.standings th
+         {
+            line-height: 30px;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+    </style>
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Little Piggy</a>
+            <div class="nav-collapse collapse">
+                <p class="navbar-text pull-right">
+                    Logged in as <a href="#" class="navbar-link">Username</a>
+                </p>
+                <ul class="nav">
+                    <!-- <li class="active"><a href="#">Home</a></li> -->
+                    <li><a href="#myprofile" data-toggle="modal">Profile</a></li>
+                    <li><a href="#gamerules" data-toggle="modal">Rules</a></li>
+                    <!-- <li><a href="#contact">Previous Seasons</a></li> -->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Schedule</li>
+                    <li><a href="#">Week 1</a></li>
+                    <li><a href="#">Week 2</a></li>
+                    <li><a href="#">Week 3</a></li>
+                    <li><a href="#">Week 4</a></li>
+                    <li><a href="#">Week 5</a></li>
+                    <li class="active"><a href="#">Week 6 <span class="badge badge-inverse">Current</span></a></li>
+                    <li><a href="#makepicks" data-toggle="modal" data-backdrop="static">Week 7</a></li>
+                    <li><a href="#">Week 8</a></li>
+                    <li><a href="#">Week 9</a></li>
+                    <li><a href="#">Week 10</a></li>
+                    <li><a href="#">Week 11</a></li>
+                    <li><a href="#">Week 12</a></li>
+                    <li><a href="#">Week 13</a></li>
+                    <li><a href="#">Week 14</a></li>
+                    <li><a href="#">Week 15</a></li>
+                    <li><a href="#">Week 16</a></li>
+                    <li class="nav-header">Playoffs</li>
+                    <li><a href="#">Wildcard</a></li>
+                    <li><a href="#">Divisionals</a></li>
+                    <li><a href="#">Conference</a></li>
+                    <li><a href="#">SUPER BOWL!</a></li>
+                </ul>
+            </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+            <img src="./img/stock-illustration-17736796-razorback-jump.jpg" alt="" class="pull-left"/>
+        </div>
+
+        <div class="span9">
+
+
+
+            <div class="well span6">
+                <h1>Season Standings</h1>
+                <table class="table table-striped table-bordered standings">
+                    <tr>
+                        <th>Player</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td><img class="profile">Player 1 <span class="label label-success">1st</span></td>
+                        <td>120 pts</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profile">Player 2 <span class="label label-info">2nd</span></td>
+                        <td>120 pts</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profile">Player 3 <span class="label label-warning">3rd</span></td>
+                        <td>120 pts</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profile">Player 4</td>
+                        <td>120 pts</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="well span6">
+                <h1>Week [X] Standings</h1>
+                <table class="table table-striped table-bordered standings">
+                    <tr>
+                        <th>Player</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td><img class="profile">Player 1 <span class="label label-success">1st</span></td>
+                        <td>8 pts</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profile">Player 2 <span class="label label-info">2nd</span></td>
+                        <td>7 pts</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profile">Player 3 <span class="label label-warning">3rd</span></td>
+                        <td>6 pts</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profile">Player 4</td>
+                        <td>3 pts</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clearfix"></div>
+            <div class="well">
+                <h1>Week [X] Matchups</h1>
+                <table class="table table-striped table-bordered standings matchups">
+                    <tr>
+                        <th>Match-ups</th>
+                        <th><img class="profile">Player 1</th>
+                        <th><img class="profile">Player 2</th>
+                        <th><img class="profile">Player 3</th>
+                        <th><img class="profile">Player 4</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="pull-right muted">FINAL</span>
+                            <img class="cardinals matchup" /> CARD - 12<br />
+                            <img class="falcons label matchup" /> FALC - 24
+                        </td>
+                        <td class="aligncenter"><img class="falcons label matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="falcons label matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="cardinals matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="cardinals matchup-fullsize" /></td>
+                    </tr>
+                    <tr>
+                        <td><img class="cardinals matchup" /> CARD - 12<br />
+                            <img class="falcons matchup" /> FALC - 24
+                        </td>
+                        <td class="aligncenter"><img class="falcons matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="falcons matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="cardinals matchup-fullsize"  /></td>
+                        <td class="aligncenter"><img class="cardinals matchup-fullsize" /></td>
+                    </tr>
+                    <tr>
+                        <td><img class="cardinals matchup" /> CARD - 12<br />
+                            <img class="falcons matchup" /> FALC - 24
+                        </td>
+                        <td class="aligncenter"><img class="falcons matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="falcons matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="cardinals matchup-fullsize"  /></td>
+                        <td class="aligncenter"><img class="cardinals matchup-fullsize" /></td>
+                    </tr>
+                    <tr>
+                        <td><img class="cardinals matchup" /> CARD - 12<br />
+                            <img class="falcons matchup" /> FALC - 24
+                        </td>
+                        <td class="aligncenter"><img class="falcons matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="falcons matchup-fullsize" /></td>
+                        <td class="aligncenter"><img class="cardinals matchup-fullsize"  /></td>
+                        <td class="aligncenter"><img class="cardinals matchup-fullsize" /></td>
+                    </tr>
+                </table>
+                Bye weeks<hr />
+                No-one
+            </div>
+        </div><!--/span-->
+    </div><!--/row-->
+
+    <div id="myprofile" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Your Profile</h3>
+        </div>
+        <form class="form-horizontal">
+            <div class="modal-body">
+                <div class="control-group">
+                    <label class="control-label" for="inputName">Email</label>
+                    <div class="controls">
+                        <input type="text" id="inputName" placeholder="Your Name...">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputAvatar">Avatar</label>
+                    <div class="controls">
+                        <input type="text" id="inputAvatar" placeholder="Avatar...">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Close</a>
+                <a href="#" class="btn btn-inverse">Save changes</a>
+            </div>
+        </form>
+    </div>
+    <div id="gamerules" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Game Rules</h3>
+        </div>
+       <div class="modal-body">
+            <p>All game rules go here.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn btn-inverse">Close</a>
+        </div>
+    </div>
+    <div id="makepicks" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Pick your winners!</h3>
+        </div>
+        <div class="modal-body">
+            <p>All game rules go here.</p>
+        </div>
+        <div class="modal-footer">
+            Clicking submit cannot be undone
+            <a href="#" class="btn btn-inverse">Submit</a>
+        </div>
+    </div>
+    <hr>
+
+    <footer>
+        <p>&copy; Company 2012</p>
+    </footer>
+
+</div><!--/.fluid-container-->
+
+<!-- Le javascript
+================================================== -->
+<script src="./js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript"></script>
+
+</body>
+</html>
