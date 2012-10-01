@@ -1,0 +1,40 @@
+body { padding-top: 60px; padding-bottom: 40px; }
+.sidebar-nav { padding: 9px 0; }
+
+/* Team Logos */
+img.team-small { height: 20px; padding:5px; vertical-align:middle}
+img.team-med { height: 54px; width: 81px;padding:5px; vertical-align:middle}
+img.team-large { height: 54px; width: 81px;padding:5px; vertical-align:middle}
+img.ari { content:url(../img/ari.png); }
+img.atl { content:url(../img/atl.png); }
+img.bal { content:url(../img/bal.png); }
+img.buf { content:url(../img/buf.png); }
+img.car { content:url(../img/car.png); }
+img.chi { content:url(../img/chi.png); }
+img.cin { content:url(../img/cin.png); }
+img.cle { content:url(../img/cle.png); }
+img.dal { content:url(../img/dal.png); }
+img.den { content:url(../img/den.png); }
+img.det { content:url(../img/det.png); }
+img.gb { content:url(../img/gb.png); }
+img.hou { content:url(../img/hou.png); }
+img.ind { content:url(../img/ind.png); }
+img.jac { content:url(../img/jac.png); }
+img.kc { content:url(../img/kc.png); }
+img.mia { content:url(../img/mia.png); }
+img.min { content:url(../img/min.png); }
+img.ne { content:url(../img/ne.png); }
+img.no { content:url(../img/no.png); }
+img.nyg { content:url(../img/nyg.png); }
+img.nyj { content:url(../img/nyj.png); }
+img.oak { content:url(../img/oak.png); }
+img.phi { content:url(../img/phi.png); }
+img.pit { content:url(../img/pit.png); }
+img.sd { content:url(../img/sd.png); }
+img.sea { content:url(../img/sea.png); }
+img.sf { content:url(../img/sf.png); }
+img.stl { content:url(../img/stl.png); }
+img.tb { content:url(../img/tb.png); }
+img.ten { content:url(../img/ten.png); }
+img.was { content:url(../img/was.png); }
+

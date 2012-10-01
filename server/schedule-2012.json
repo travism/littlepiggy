@@ -1,0 +1,196 @@
+{
+    "app":{
+        "users":[{
+                "id":"",
+                "name":"Travis McHattie",
+                "password":""
+            },{
+                "id":"",
+                "name":"Jennifer McHattie",
+                "password":""
+            },{
+                "id":"",
+                "name":"Shonda Cornelius",
+                "password":""
+            },{
+                "id":"",
+                "name":"Tom Cornelius",
+                "password":""
+            }],
+        "schedule":[{
+            "id":"2892fa53-07a9-4f6a-9f8c-2d16f9625ad3",
+            "label": "Week 1",
+            "matchups":[
+                {
+                    "home":"",
+                    "homescore":"",
+                    "visitor":"",
+                    "visitorscore":""
+                }
+            ]
+        }],
+        "teams": [
+            {
+                "id":"BAL",
+                "name":"Baltimore Ravens",
+                "division":"AFC-NORTH",
+                "conference": "AFC"
+            },{
+                "id":"CIN",
+                "name":"Cincinnati Bengals",
+                "division":"AFC-NORTH",
+                "conference": "AFC"
+            },{
+                "id":"CLE",
+                "name":"Cleveland Browns",
+                "division":"AFC-NORTH",
+                "conference": "AFC"
+            },{
+                "id":"PIT",
+                "name":"Pittsburgh Steelers",
+                "division":"AFC-NORTH",
+                "conference": "AFC"
+            },{
+                "id":"HOU",
+                "name":"Houston Texans",
+                "division":"AFC-SOUTH",
+                "conference": "AFC"
+            },{
+                "id":"IND",
+                "name":"Indianapolis Colts",
+                "division":"AFC-SOUTH",
+                "conference": "AFC"
+            },{
+                "id":"JAC",
+                "name":"Jacksonville Jaguars",
+                "division":"AFC-SOUTH",
+                "conference": "AFC"
+            },{
+                "id":"TEN",
+                "name":"Tennessee Titans",
+                "division":"AFC-SOUTH",
+                "conference": "AFC"
+            },{
+                "id":"BUF",
+                "name":"Buffalo Bills",
+                "division":"AFC-EAST",
+                "conference": "AFC"
+            },{
+                "id":"MIA",
+                "name":"Miami Dolphins",
+                "division":"AFC-EAST",
+                "conference": "AFC"
+            },{
+                "id":"NE",
+                "name":"New England Patriots",
+                "division":"AFC-EAST",
+                "conference": "AFC"
+            },{
+                "id":"NYJ",
+                "name":"New York Jets",
+                "division":"AFC-EAST",
+                "conference": "AFC"
+            },{
+                "id":"DEN",
+                "name":"Denver Broncos",
+                "division":"AFC-WEST",
+                "conference": "AFC"
+            },{
+                "id":"KC",
+                "name":"Kansas City Chiefs",
+                "division":"AFC-WEST",
+                "conference": "AFC"
+            },{
+                "id":"OAK",
+                "name":"Oakland Raiders",
+                "division":"AFC-WEST",
+                "conference": "AFC"
+            },{
+                "id":"SD",
+                "name":"San Diego Chargers",
+                "division":"AFC-WEST",
+                "conference": "AFC"
+            },{
+                "id":"CHI",
+                "name":"Chicago Bears",
+                "division":"NFC-NORTH",
+                "conference": "NFC"
+            },{
+                "id":"DET",
+                "name":"Detroit Lions",
+                "division":"NFC-NORTH",
+                "conference": "NFC"
+            },{
+                "id":"GB",
+                "name":"Green Bay Packers",
+                "division":"NFC-NORTH",
+                "conference": "NFC"
+            },{
+                "id":"MIN",
+                "name":"Minnesota Vikings",
+                "division":"NFC-NORTH",
+                "conference": "NFC"
+            },{
+                "id":"ATL",
+                "name":"Atlanta Falcons",
+                "division":"NFC-SOUTH",
+                "conference": "NFC"
+            },{
+                "id":"CAR",
+                "name":"Carolina Panthers",
+                "division":"NFC-SOUTH",
+                "conference": "NFC"
+            },{
+                "id":"NO",
+                "name":"New Orleans Saints",
+                "division":"NFC-SOUTH",
+                "conference": "NFC"
+            },{
+                "id":"TB",
+                "name":"Tampa Bay Buccaneers",
+                "division":"NFC-SOUTH",
+                "conference": "NFC"
+            },{
+                "id":"DAL",
+                "name":"Dallas Cowboys",
+                "division":"NFC-EAST",
+                "conference": "NFC"
+            },{
+                "id":"NYG",
+                "name":"New York Giants",
+                "division":"NFC-EAST",
+                "conference": "NFC"
+            },{
+                "id":"PHI",
+                "name":"Philadelphia Eagles",
+                "division":"NFC-EAST",
+                "conference": "NFC"
+            },{
+                "id":"WAS",
+                "name":"Washington Redskins",
+                "division":"NFC-EAST",
+                "conference": "NFC"
+            },{
+                "id":"ARI",
+                "name":"Arizona Cardinals",
+                "division":"NFC-WEST",
+                "conference": "NFC"
+            },{
+                "id":"SF",
+                "name":"San Francisco 49ers",
+                "division":"NFC-WEST",
+                "conference": "NFC"
+            },{
+                "id":"SEA",
+                "name":"Seattle Seahawks",
+                "division":"NFC-WEST",
+                "conference": "NFC"
+            },{
+                "id":"STL",
+                "name":"St. Louis Rams",
+                "division":"NFC-WEST",
+                "conference": "NFC"
+            }
+        ]
+    }
+}
