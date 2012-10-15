@@ -1,0 +1,14 @@
+h1 Temp Title
+
+table.table.table-striped.table-bordered.standings
+    tr
+        th Player
+        th Points
+
+    each player in players
+        tr
+            td
+                img(class="profile")
+                | #{player.name}
+                span.label #{player.rank}
+            td #{player.points} pts
