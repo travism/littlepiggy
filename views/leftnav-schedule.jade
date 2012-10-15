@@ -1,0 +1,9 @@
+ul.nav.nav-list
+    li.nav-header Schedule
+        each game in schedule.regularseason
+            li
+                a(href="#") #{game.label}
+    li.nav-header Playoffs
+        each game in schedule.playoffs
+                li
+                    a(href="#") #{game.label}

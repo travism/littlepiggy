@@ -1,0 +1,21 @@
+extends  base
+
+block title
+    title littlepiggy - showdown
+
+block maincontent
+    div.span9
+        img(src="/img/stock-illustration-17736796-razorback-jump.jpg", alt="", class="pull-left")
+
+    div.span9
+        div.well.span6
+            include standings
+        div.well.span6
+            include standings
+
+        div.clearfix
+        div.well
+
+block leftrail
+    div.well.sidebar-nav
+        include leftnav-schedule
