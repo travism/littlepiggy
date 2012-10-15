@@ -38,3 +38,35 @@ img.tb { content:url(../img/tb.png); }
 img.ten { content:url(../img/ten.png); }
 img.was { content:url(../img/was.png); }
 
+img.profile {
+    content:url(https://secure.gravatar.com/avatar/73a2ffba9e3be3c846684c3285e1a967?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png);
+    height:30px;
+    width:30px;
+    padding:5px;
+    vertical-align:middle
+}
+
+.table-striped tbody tr:nth-child(odd) td {
+    background-color: #f9f9f9;
+}
+
+.table-bordered th,
+.table-striped tbody tr:nth-child(odd) th{
+    background-color: #333333;
+    color: #ffffff;
+}
+.table-bordered td {
+    background-color: #ffffff;
+}
+
+.table-bordered.matchups td.aligncenter {
+    text-align: center;
+}
+
+table.standings td,
+table.standings th
+{
+    line-height: 30px;
+    vertical-align: middle;
+    font-weight: bold;
+}
