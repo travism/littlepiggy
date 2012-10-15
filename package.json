@@ -1,0 +1,25 @@
+{
+    "name": "littlepiggy",
+    "description": "Package of node modules necessary to run the little piggy project.",
+    "author": {
+        "name": "Travis McHattie",
+        "email": "travis.mchattie@thinksolid.com",
+        "url": "http://allyoucanleet.com/"
+    },
+    "bugs": {
+        "url": "https://github.com/travism/littlepiggy/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/travism/littlepiggy.git"
+    },
+    "version": "0.0.1",
+    "homepage": "https://github.com/travism/littlepiggy",
+    "dependencies": {
+        "lodash": "0.8.2",
+        "socket.io" : "0.9.10",
+        "express":"3.0.0rc5",
+        "jade":"0.27.6"
+    },
+    "engine": "node 0.8.11"
+}
