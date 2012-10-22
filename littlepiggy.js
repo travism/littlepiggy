@@ -6,7 +6,8 @@
         jade = require('jade'),
         fs = require('fs'),
         app = express(),
-        littlepiggy = this;
+        littlepiggy = this,
+        port = process.argv[2];
 
     require('./lib/application-data')(this);
 
@@ -20,6 +21,8 @@
         res.render((__dirname + "/views/index.jade"), littlepiggy.data);
     });
 
-    app.listen(3000);
+    app.listen(port);
+
+    console.log("Application running on port: " + port);
 
 })();
