@@ -1,0 +1,79 @@
+[{
+    "awayteam": "SEA",
+    "awayteam_score":6,
+    "hometeam": "SF",
+    "hometeam_score": 13,
+    "status":"FINAL"
+},{
+    "awayteam": "TEN",
+    "awayteam_score":35,
+    "hometeam": "BUF",
+    "hometeam_score": 34,
+    "status":"FINAL"
+},{
+    "awayteam": "WAS",
+    "awayteam_score":23,
+    "hometeam": "NYG",
+    "hometeam_score": 27,
+    "status":"FINAL"
+},{
+    "awayteam": "NO",
+    "awayteam_score":35,
+    "hometeam": "TB",
+    "hometeam_score": 28,
+    "status":"FINAL"
+},{
+    "awayteam": "DAL",
+    "awayteam_score":19,
+    "hometeam": "CAR",
+    "hometeam_score": 14,
+    "status":"FINAL"
+},{
+    "awayteam": "BAL",
+    "awayteam_score":13,
+    "hometeam": "HOU",
+    "hometeam_score": 43,
+    "status":"FINAL"
+},{
+    "awayteam": "CLE",
+    "awayteam_score":13,
+    "hometeam": "IND",
+    "hometeam_score": 17,
+    "status":"FINAL"
+},{
+    "awayteam": "GB",
+    "awayteam_score":30,
+    "hometeam": "STL",
+    "hometeam_score": 20,
+    "status":"FINAL"
+},{
+    "awayteam": "ARI",
+    "awayteam_score":14,
+    "hometeam": "MIN",
+    "hometeam_score": 21,
+    "status":"FINAL"
+},{
+    "awayteam": "NYJ",
+    "awayteam_score":0,
+    "hometeam": "NE",
+    "hometeam_score": 0,
+    "status":""
+},{
+    "awayteam": "JAX",
+    "awayteam_score":0,
+    "hometeam": "OAK",
+    "hometeam_score": 0,
+    "status":""
+},{
+    "awayteam": "PIT",
+    "awayteam_score":0,
+    "hometeam": "CIN",
+    "hometeam_score": 0,
+    "status":""
+},{
+    "awayteam": "DET",
+    "awayteam_score":0,
+    "hometeam": "CHI",
+    "hometeam_score": 0,
+    "status":""
+}]
