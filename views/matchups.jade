@@ -1,0 +1,19 @@
+h1 Week  Matchups
+
+table.table.table-striped.table-bordered.standings.matchups
+    tr
+        th Match-ups
+        each player in players
+            th
+                img(class="profile")
+                | #{player.name}
+
+    each game in schedule.current
+        tr
+            td
+                span.pull-right.muted #{game.status}
+                img.team-small(class= game.awayteam.toLowerCase())
+                | #{game.awayteam} - #{game.awayteam_score}
+                br
+                img.team-small(class= game.hometeam.toLowerCase())
+                | #{game.hometeam} - #{game.hometeam_score}
